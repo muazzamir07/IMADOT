@@ -1,0 +1,151 @@
+<h1>Statistics</h1>
+<hr />
+<div class="card">
+  <div class="card-body">
+    <br>
+    FUSION RESULTS
+    <hr>
+      <div class="card-body-two">
+        <table class="result-table">
+          <tr>
+            <th></th>
+            <th>INTERMEDIATE FUSION</th>
+            <th>LATE FUSION</th>
+          </tr>
+          <tr>
+            <td>50 epochs</td>
+            <td>93.23</td>
+            <td>75</td>
+          </tr>
+          <tr>
+            <td>250 epochs</td>
+            <td>96.31</td>
+            <td>85</td>
+          </tr>
+          <tr>
+            <td>600 epochs</td>
+            <td>96.35</td>
+            <td>85</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card-body-two">
+        <table class="result-table">
+          <tr>
+            <th></th>
+            <th>Train Dataset</th>
+            <th>Test Dataset</th>
+          </tr>
+          <tr>
+            <td>F1 Score</td>
+            <td>89.99</td>
+            <td>70.45</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>81.31</td>
+            <td>81.00</td>
+          </tr>
+          <tr>
+            <td>Sensitivity</td>
+            <td>86.23</td>
+            <td>75.34</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card-body-two">
+        <table class="result-table">
+          <tr>
+            <th></th>
+            <th>Without Data Augmentation</th>
+            <th>With Data Augmentation</th>
+          </tr>
+          <tr>
+            <td>F1 Score</td>
+            <td>89.99</td>
+            <td>98.46</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>81.31</td>
+            <td>98.55</td>
+          </tr>
+          <tr>
+            <td>Accuracy</td>
+            <td>96.35</td>
+            <td>98.44</td>
+          </tr>
+        </table>
+      </div>
+      <br>
+      <h4 style="font-weight: normal;">
+        "Role of Integrated PET/CT Fusion in Lung Carcinoma - PMC (nih.gov)" gives 94% accuracy
+        <br>
+        "Brain Tumor Detection Using CT and MRI Image Fusion (citefactor.org)" gives 93.3% accuracy
+      </h4>
+
+      <br><br>
+    CLASSIFICATION RESULTS
+    <hr>
+    <div class="card-body-two">
+      <table class="result-table">
+        <tr>
+          <th></th>
+          <th>RESNET</th>
+          <th>DENSENET</th>
+          <th>INCEPTION</th>
+        </tr>
+        <tr>
+          <td>CT Accuracy</td>
+          <td>0.99</td>
+          <td>0.99</td>
+          <td>0.97</td>
+        </tr>
+        <tr>
+          <td>CT Validation Accuracy</td>
+          <td>0.97</td>
+          <td>0.22</td>
+          <td>0.90</td>
+        </tr>
+        <tr>
+          <td>PET Accuracy</td>
+          <td>1.00</td>
+          <td>0.98</td>
+          <td>0.79</td>
+        </tr>
+        <tr>
+          <td>PET Validation Accuracy</td>
+          <td>0.91</td>
+          <td>0.87</td>
+          <td>0.54</td>
+        </tr>
+      </table>
+    </div>
+
+    <br><br>
+    SEGMENTATION RESULTS
+    <hr>
+    <br>
+    <h4>Dice Coefficient: 0.6149</h4>
+    <div class="card-body-two">
+      <div class="sub-card">
+        INPUT
+        <br>
+        <img src="./assets/unetinput.jpg" width="212px" height="212px" alt="input" class="plot3d">
+    </div>
+    <div class="sub-card">
+        OUTPUT
+        <br>
+        <img src="./assets/unetoutput.jpg" width="212px" height="212px" alt="output" class="plot3d">
+    </div>
+    <div class="sub-card">
+      PRECISE
+      <br>
+      <img src="./assets/unetnewoutput.PNG" width="212px" height="212px" alt="output" class="plot3d">
+  </div>
+    </div>  
+  </div>
+</div>
+<br />
+<hr />
+<br />

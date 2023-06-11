@@ -1,0 +1,92 @@
+<h1>Diagnosis</h1>
+<hr>
+<div class="card">
+    <div class="card-head">Please upload CT and PET scans in the respective fields</div>
+    <div class="card-body">
+
+        
+        <label for="ctrl">CT Scans</label>
+        <input type="file" (change)="onFolderSelected($event, 'CT')" webkitdirectory directory required>
+
+        <label for="ctrl">PET Scans</label>
+        <input type="file" (change)="onFolderSelected($event, 'PET')" webkitdirectory directory required>
+
+        <button type="submit" (click)="onUpload()" style="background-color: #04383f; color: aliceblue; margin: 5px; border-radius: 5px; width: 150px; height: 25px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); border: none;">Upload</button>
+        
+    </div>
+</div>
+<div class="card">
+    <div class="card-head">Results</div>
+    <div class="card-body">
+        <!--
+        <img [src]="'/api/plot?input_dir=' + input_dir" />
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ducimus soluta, quasi aut ipsa non, ullam enim rem repudiandae, vitae provident animi. Inventore rerum, voluptas optio dignissimos blanditiis modi illo!
+        -->
+        <div class="card-body-two">
+            <table class="result-table">
+                <tr>
+                    <th>Metrics</th>
+                    <th>Value</th>
+                </tr>
+<!---
+                <tr>
+                  <td>UNet Accuracy</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>UNet Dice Coefficient</td>
+                  <td>x</td>
+                </tr>
+-->
+                <tr>
+                  <td>Tumor Type</td>
+                  <td>{{typeDetected}}</td>
+                </tr>
+                <tr>
+                    <td>Tumor Probability</td>
+                    <td>{{probDetected}}</td>
+                </tr>
+<!--
+                <tr>
+                    <td>Late Fusion - Tumor Type</td>
+                    <td>x</td>
+                  </tr>
+                  <tr>
+                      <td>Late Fusion - Tumor Probability</td>
+                      <td>{{LateprobDetected}}</td>
+                  </tr>
+-->                  
+              </table>   
+            
+<!--            <div class="sub-card">
+                <h4>Segmentation Result</h4><hr>
+                <img id = "myImage" alt="segmentation result" class="plot3d">
+            </div>
+-->
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-head">3D visualization</div>
+    <div class="card-body-two">
+        <div class="sub-card">
+<!--
+            <div class="btn">
+                <button type="submit" (click)="on3DPlot()" style="background-color: #04383f; color: aliceblue; margin: 10px; border-radius: 5px; width: 170px; height: 30px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); border: none;">3D Plot</button>
+            </div>
+            <hr>
+            <img src="./assets/making.jpg" alt="implementing" class="plot3d">
+        </div>
+-->        
+        <div class="sub-card">
+            <div class="btn">
+                <button type="submit" (click)="on3DModel()" style="background-color: #04383f; color: aliceblue; margin: 10px; border-radius: 5px; width: 170px; height: 30px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); border: none;">3D Model</button>
+            </div>
+            <hr>
+            <img src="./assets/making.jpg" alt="implementing" class="plot3d">
+        </div>
+    </div>
+</div>
+<br><br>
+<hr>
+<br>

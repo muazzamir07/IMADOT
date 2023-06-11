@@ -1,0 +1,122 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+h4{
+    padding: 5px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    background-color: #fff;
+    margin: 1.25rem 0 1.25rem 0;
+    box-shadow: 0 .25rem .5rem #e6edef;
+
+    .card-head {
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid #edf1f7;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .card-body {
+        padding: 1rem 1.5rem; 
+    }
+
+    .card-body-two {
+        padding: 1rem 1.5rem; 
+        display: flex;
+    }
+
+    .result-table {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+        font-size: 1.1rem;
+    }
+    .result-table td {
+        padding: 0.5rem;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    .result-table tr:last-child td {
+        border-bottom: none;
+    }
+    .result-table th {
+        font-weight: bold;
+        background-color: #04383f;
+        color: #fff;
+        padding: 0.5rem;
+        text-align: left;
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+    .result-table td:last-child {
+        border-right: none;
+    }
+      
+
+    .sub-card {
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        flex-grow: 1;
+        display:block;
+        border: none;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #c1c1c1, -5px -5px 10px #ffffff;
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+        }
+        .plot3d {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .sub-card-two {
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        flex-grow: 1;
+        display:block;
+        border: none;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #c1c1c1, -5px -5px 10px #ffffff;
+        height: 500px;
+        overflow: hidden;
+        padding-bottom: 80px;
+      
+        .info {
+          max-width: 100%;
+          max-height: 100%;
+          width: auto;
+          max-width: 100%;
+          height: auto;
+          max-height: 100%;
+        }
+      }
+      
+}
