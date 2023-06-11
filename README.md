@@ -5,7 +5,7 @@ Add a directory named static in imadotBackend and upload the folders in the belo
 https://drive.google.com/drive/folders/1X-rMwKNGwjN9u9tGATH9P5mO2YIV2had?usp=drive_link
 
 # Installations
- Download Node.js from Download | Node.js (nodejs.org)
+ Download Node.js from Download | Node.js (nodejs.org)\n
  Download and install Angular from Angular
  Install Angular CLI using npm install –g @angular/cli
  Install Flask using pip install flask
