@@ -5,15 +5,15 @@ Add a directory named static in imadotBackend and upload the folders in the belo
 https://drive.google.com/drive/folders/1X-rMwKNGwjN9u9tGATH9P5mO2YIV2had?usp=drive_link
 
 # Installations
- Download Node.js from Download | Node.js (nodejs.org)\n
- Download and install Angular from Angular
- Install Angular CLI using npm install –g @angular/cli
- Install Flask using pip install flask
- Install TensorFlow using pip install tensorflow
+ Download Node.js from Download | Node.js (nodejs.org)<br>
+ Download and install Angular from Angular<br>
+ Install Angular CLI using npm install –g @angular/cli<br>
+ Install Flask using pip install flask<br>
+ Install TensorFlow using pip install tensorflow<br>
 # Steps to run
- Open Angular Frontend in a new VS Code window
- Go to “Terminal” in tool bar and select “New Terminal”
- Write ng serve in terminal
+ Open Angular Frontend in a new VS Code window<br>
+ Go to “Terminal” in tool bar and select “New Terminal”<br>
+ Write ng serve in terminal<br>
 ![image](https://github.com/muazzamir07/IMADOT/assets/57788115/3fa48e77-d347-47a6-829c-fce23daddec7)
  Ctrl + click on the highlighted link to visit the web application in the running state
  Now open a new VS Code window by going to File -> New Window in tool bar
